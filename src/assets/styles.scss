@@ -1,0 +1,114 @@
+@import '@/assets/reset';
+@import '@/assets/variables';
+@import 'https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap';
+body {
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  color: $col-text;
+  font-weight: 700;
+  font-size: 2dvh;
+  font-family: Play, sans-serif;
+  background-color: $col-bg-dark;
+  user-select: none;
+}
+* > svg {
+  font-size: 0.8em;
+}
+
+// --Декорация полосы прокрутки
+*::-webkit-scrollbar {
+  width: 0.3dvh;
+  background-color: $col-bg-main;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $col-basic;
+  border-radius: 1.2dvh;
+}
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+h1 {
+  text-transform: uppercase;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  & button,
+  & a {
+    width: calc(100% / 2 - 1dvh);
+    & button {
+      width: 100%;
+    }
+  }
+}
+h2 {
+  padding: 1dvh;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bsh-yellow {
+  background: $col-bg-main;
+  border: 0.4dvh solid $col-yellow;
+  box-shadow: 0 0 1.2dvh 0 $col-yellow;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $col-yellow;
+  }
+}
+.bsh-green {
+  background: $col-bg-main;
+  border: 0.4dvh solid $col-green;
+  box-shadow: 0 0 1.2dvh 0 $col-green;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $col-green;
+  }
+}
+.bsh-orange {
+  background: $col-bg-main;
+  border: 0.4dvh solid $col-orange;
+  box-shadow: 0 0 1.2dvh 0 $col-orange;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $col-orange;
+  }
+}
+.bsh-basic {
+  background: $col-bg-main;
+  border: 0.4dvh solid $col-basic;
+  box-shadow: 0 0 1.2dvh 0 $col-basic;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $col-basic;
+  }
+}
+.bsh-turq {
+  background: $col-bg-main;
+  border: 0.4dvh solid $col-turq;
+  box-shadow: 0 0 1.2dvh 0 $col-turq;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $col-turq;
+  }
+}
+.bsh-red {
+  background: $col-bg-main;
+  border: 0.4dvh solid $col-red;
+  box-shadow: 0 0 1.2dvh 0 $col-red;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $col-red;
+  }
+}
+.bsh-purple {
+  background: $col-bg-main;
+  border: 0.4dvh solid $col-purple;
+  box-shadow: 0 0 1.2dvh 0 $col-purple;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background: $col-purple;
+  }
+}
